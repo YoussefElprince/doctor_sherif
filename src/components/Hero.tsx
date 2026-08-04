@@ -89,12 +89,12 @@ export default function Hero() {
           <motion.div
             variants={floatCard}
             animate="animate"
-            className="absolute -left-6 top-10 hidden sm:flex items-center gap-2.5 rounded-2xl bg-white/90 backdrop-blur px-4 py-3 shadow-lift border border-white"
+            className="absolute -left-6 top-10 flex items-center gap-1.5 rounded-2xl border border-white bg-white/90 px-2.5 py-2 shadow-lift backdrop-blur sm:gap-2.5 sm:px-4 sm:py-3"
           >
-            <span className="grid place-items-center w-9 h-9 rounded-full bg-accent/15 text-accent">
+            <span className="grid place-items-center h-7 w-7 rounded-full bg-accent/15 text-accent sm:h-9 sm:w-9">
               <Award size={17} />
             </span>
-            <span className="text-sm font-semibold text-primary-deep leading-tight">
+            <span className="text-xs font-semibold leading-tight text-primary-deep sm:text-sm">
               15+ {content.ui.years}
               <br />
               <span className="font-normal text-ink-soft">{content.ui.experienceWord}</span>
@@ -105,12 +105,12 @@ export default function Hero() {
             variants={floatCard}
             animate="animate"
             transition={{ delay: 1 }}
-            className="absolute -right-4 top-1/3 hidden sm:flex items-center gap-2.5 rounded-2xl bg-white/90 backdrop-blur px-4 py-3 shadow-lift border border-white"
+            className="absolute -right-4 top-[52%] flex items-center sm:top-[52%] gap-1.5 rounded-2xl border border-white bg-white/90 px-2.5 py-2 shadow-lift backdrop-blur sm:gap-2.5 sm:px-4 sm:py-3"
           >
-            <span className="grid place-items-center w-9 h-9 rounded-full bg-primary/10 text-primary">
+            <span className="grid place-items-center h-7 w-7 rounded-full bg-primary/10 text-primary sm:h-9 sm:w-9">
               <ShieldCheck size={17} />
             </span>
-            <span className="text-sm font-semibold text-primary-deep leading-tight">
+            <span className="text-xs font-semibold leading-tight text-primary-deep sm:text-sm">
               {content.ui.consultant}
               <br />
               <span className="font-normal text-ink-soft">{content.ui.generalSurgeon}</span>
@@ -121,12 +121,12 @@ export default function Hero() {
             variants={floatCard}
             animate="animate"
             transition={{ delay: 2 }}
-            className="absolute -left-4 bottom-6 flex items-center gap-2.5 rounded-2xl bg-white/90 backdrop-blur px-4 py-3 shadow-lift border border-white"
+            className="absolute -left-4 bottom-6 flex items-center gap-1.5 rounded-2xl border border-white bg-white/90 px-2.5 py-2 shadow-lift backdrop-blur sm:gap-2.5 sm:px-4 sm:py-3"
           >
-            <span className="grid place-items-center w-9 h-9 rounded-full bg-secondary/15 text-secondary">
+            <span className="grid place-items-center h-7 w-7 rounded-full bg-secondary/15 text-secondary sm:h-9 sm:w-9">
               <GraduationCap size={17} />
             </span>
-            <span className="text-sm font-semibold text-primary-deep leading-tight">
+            <span className="text-xs font-semibold leading-tight text-primary-deep sm:text-sm">
               {content.ui.assistant}
               <br />
               <span className="font-normal text-ink-soft">{content.ui.professor}</span>

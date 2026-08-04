@@ -95,7 +95,7 @@ export default function Hero() {
               <Award size={17} />
             </span>
             <span className="text-xs font-semibold leading-tight text-primary-deep sm:text-sm">
-              15+ {content.ui.years}
+              25+ {content.ui.years}
               <br />
               <span className="font-normal text-ink-soft">{content.ui.experienceWord}</span>
             </span>

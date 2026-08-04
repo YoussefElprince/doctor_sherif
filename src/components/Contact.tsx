@@ -12,6 +12,7 @@ export default function Contact() {
   const { content } = useLanguage();
   const contactCards = [
     ...content.doctor.phoneNumbers.map((number) => ({ icon: Phone, label: content.ui.phone, value: number, href: `tel:+20${number.slice(1)}`, action: content.ui.clickHere })),
+    { icon: Phone, label: content.ui.secretary, value: "01098425644", href: "tel:+201098425644", action: content.ui.clickHere },
     ...content.doctor.whatsappNumbers.map((number) => ({ icon: MessageCircle, label: content.ui.whatsapp, value: number, href: `https://wa.me/20${number.slice(1)}`, action: content.ui.clickHere })),
     { icon: Mail, label: content.ui.email, value: content.doctor.email, href: `mailto:${content.doctor.email}`, action: undefined },
     { icon: MapPin, label: content.ui.clinicAddress, value: content.clinic.address, href: content.clinic.mapsUrl, action: undefined },

@@ -6,7 +6,7 @@ const translations = {
     doctor: {
       ...doctor,
       qualification: doctor.qualificationEn,
-      experienceLabel: "More than 15 years",
+      experienceLabel: "More than 25 years",
     },
     clinic: {
       ...clinic,
@@ -40,6 +40,7 @@ const translations = {
       cairoLocation: "Central Cairo Location",
       clinicMap: "Clinic location map",
       phone: "Phone",
+      secretary: "Clinic Secretary",
       whatsapp: "WhatsApp",
       email: "Email",
       clinicAddress: "Clinic Address",
@@ -56,15 +57,15 @@ const translations = {
       position: "Position",
       qualification: "Qualification",
       experience: "Experience",
-      moreThan15: "More than 15 years",
+      moreThan15: "More than 25 years",
       aboutDoctor: "About",
       years: "Years",
       experienceWord: "Experience",
       consultant: "Consultant",
-      generalSurgeon: "General Surgeon",
+      generalSurgeon: "Onco & General Surgeon",
       assistant: "Assistant",
       professor: "Professor",
-      portraitAlt: "Portrait of Dr. Sherif Elprince, Consultant General Surgeon",
+      portraitAlt: "Portrait of Dr. Sherif Elprince, Consultant Onco & General Surgeon",
       emailDoctor: "Email Dr. Sherif Elprince",
       clickHere: "Click here",
     },
@@ -73,11 +74,11 @@ const translations = {
     doctor: {
       ...doctor,
       name: "د. شريف البرنس",
-      title: "استشاري الجراحة العامة",
+      title: "استشاري جراحات الأورام والجراحة العامة",
       affiliation: "أستاذ مساعد بجامعة بني سويف",
-      qualification: "دكتوراه في الجراحة العامة والزمالة البريطانية (FRCS)",
-      experience: "أكثر من 15 عاماً من الخبرة",
-      experienceLabel: "أكثر من 15 عاماً",
+      qualification: "دكتوراه في جراحات الأورام والجراحة العامة والزمالة البريطانية (FRCS)",
+      experience: "أكثر من 25 عاماً من الخبرة",
+      experienceLabel: "أكثر من 25 عاماً",
     },
     clinic: {
       ...clinic,
@@ -85,21 +86,21 @@ const translations = {
       address: "أمام معهد الأورام، 5 شارع قصر العيني",
     },
     stats: [
-      { value: 15, suffix: "+", label: "عاماً من الخبرة" },
-      { value: 1000, suffix: "+", label: "عملية ناجحة" },
-      { value: 100, suffix: "%", label: "رعاية احترافية" },
-      { value: 24, suffix: "/7", label: "دعم للمرضى" },
+      { value: 25, prefix: "", suffix: "+", label: "عاماً من الخبرة" },
+      { value: 1000, prefix: "", suffix: "+", label: "عملية ناجحة" },
+      { value: 100, prefix: "", suffix: "%", label: "رعاية احترافية" },
+      { value: 10, prefix: "+", suffix: "", label: "التدريس" },
     ],
     services: [
-      { title: "الجراحة العامة", description: "رعاية جراحية متكاملة لمجموعة واسعة من حالات البطن والجهاز الهضمي والأنسجة الرخوة، من التشخيص حتى التعافي." },
+      { title: "جراحات الأورام والجراحة العامة", description: "رعاية جراحية متكاملة لمجموعة واسعة من عمليات أورام الرأس والرقبة والجهاز الهضمي والرحم والمبايض وعنق الرحم، بالإضافة إلى حالات الأنسجة الرخوة وسرطان الثدي، من التشخيص حتى التعافي، إلى جانب عمليات الجراحة العامة مثل الفتق والعمليات الشرجية والزائدة والمرارة والناسور العصعصي." },
       { title: "جراحات المنظار", description: "تقنيات جراحية بسيطة بالمنظار تقلل الندبات وتقصّر فترة الإقامة في المستشفى وتسرّع وقت التعافي." },
       { title: "الاستشارات الجراحية", description: "تقييم شامل واستشارات للرأي الثاني لمساعدة المرضى على فهم التشخيص وخيارات العلاج." },
       { title: "متابعة ما بعد الجراحة", description: "متابعة منظمة للتعافي وإرشادات للعناية بالجرح لضمان شفاء آمن ومدار بشكل جيد." },
       { title: "التقييم الجراحي الطارئ", description: "تقييم سريع للحالات الجراحية الحادة مع إرشادات واضحة للخطوات العاجلة التالية." },
     ],
     whyChoose: [
-      { title: "أكثر من 15 عاماً من الخبرة", description: "خبرة واسعة في الجراحة العامة وجراحات المنظار." },
-      { title: "استشاري جراحة عامة", description: "خبرة متقدمة في الحالات الجراحية المعقدة." },
+      { title: "أكثر من 25 عاماً من الخبرة", description: "خبرة واسعة في جراحات الأورام والجراحة العامة وجراحات المنظار." },
+      { title: "استشاري جراحات الأورام والجراحة العامة", description: "خبرة متقدمة في الحالات الجراحية المعقدة." },
       { title: "أستاذ مساعد", description: "دور أكاديمي نشط في جامعة بني سويف." },
       { title: "الزمالة البريطانية", description: "تدريب معتمد من FRCS ومعايير عالمية للرعاية." },
     ],
@@ -107,7 +108,7 @@ const translations = {
       { day: "السبت", hours: "4:00 م – 6:00 م", closed: false },
       { day: "الأحد", hours: "4:00 م – 6:00 م", closed: false },
       { day: "الاثنين", hours: "4:00 م – 6:00 م", closed: false },
-      { day: "الثلاثاء", hours: "4:00 م – 6:00 م", closed: false },
+      { day: "الثلاثاء", hours: "مغلق", closed: true },
       { day: "الأربعاء", hours: "4:00 م – 6:00 م", closed: false },
       { day: "الخميس", hours: "مغلق", closed: true },
       { day: "الجمعة", hours: "مغلق", closed: true },
@@ -126,7 +127,7 @@ const translations = {
       contact: "تواصل معنا",
       about: "عن الطبيب",
       services: "الخدمات",
-      whyChoose: "لماذا تختار",
+      whyChoose: "لماذا تختارنا",
       clinic: "العيادة",
       getInTouch: "تواصل معنا",
       areasOfCare: "مجالات الرعاية الجراحية",
@@ -141,6 +142,7 @@ const translations = {
       cairoLocation: "موقع مركزي في القاهرة",
       clinicMap: "خريطة موقع العيادة",
       phone: "الهاتف",
+      secretary: "سكرتير العيادة",
       whatsapp: "واتساب",
       email: "البريد الإلكتروني",
       clinicAddress: "عنوان العيادة",
@@ -157,15 +159,15 @@ const translations = {
       position: "المنصب",
       qualification: "المؤهلات",
       experience: "الخبرة",
-      moreThan15: "أكثر من 15 عاماً",
+      moreThan15: "أكثر من 25 عاماً",
       aboutDoctor: "عن",
       years: "عاماً",
       experienceWord: "من الخبرة",
       consultant: "استشاري",
-      generalSurgeon: "جراحة عامة",
+      generalSurgeon: "جراحات الأورام والجراحة العامة",
       assistant: "أستاذ",
       professor: "مساعد",
-      portraitAlt: "صورة د. شريف البرنس، استشاري الجراحة العامة",
+      portraitAlt: "صورة د. شريف البرنس، استشاري جراحات الأورام والجراحة العامة",
       emailDoctor: "راسل د. شريف البرنس",
       clickHere: "اضغط هنا",
     },
@@ -192,8 +194,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = language;
     document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
     document.title = language === "ar"
-      ? "د. شريف البرنس | استشاري الجراحة العامة"
-      : "Dr. Sherif Elprince | Consultant General Surgeon";
+      ? "د. شريف البرنس | استشاري جراحات الأورام والجراحة العامة"
+      : "Dr. Sherif Elprince | Consultant Onco & General Surgeon";
     window.localStorage.setItem("site-language", language);
   }, [language]);
 

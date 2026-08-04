@@ -3,10 +3,12 @@ import { motion, useInView } from "framer-motion";
 
 export default function AnimatedCounter({
   value,
+  prefix = "",
   suffix = "",
   duration = 1.6,
 }: {
   value: number;
+  prefix?: string;
   suffix?: string;
   duration?: number;
 }) {
@@ -30,6 +32,7 @@ export default function AnimatedCounter({
 
   return (
     <motion.span ref={ref} className="tabular-nums">
+      {prefix}
       {display}
       {suffix}
     </motion.span>

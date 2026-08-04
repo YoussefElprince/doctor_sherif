@@ -1,26 +1,26 @@
 export const doctor = {
   name: "Dr. Sherif Elprince",
-  title: "Consultant General Surgery",
+  title: "Consultant Onco Surgery & General Surgery",
   affiliation: "Assistant Professor at Beni Suef University",
-  qualificationEn: "MD in General Surgery & British Fellowship (FRCS)",
-  experience: "15+ Years of Experience",
+  qualificationEn: "MD in Onco Surgery & General Surgery & British Membership (MRCS)",
+  experience: "25+ Years of Experience",
   phoneNumbers: ["01119335527", "01006040746"],
   whatsappNumbers: ["01119335527", "01006040746"],
   email: "sherifelprincesayed@yahoo.com",
 };
 
 export const stats = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 1000, suffix: "+", label: "Successful Operations" },
-  { value: 100, suffix: "%", label: "Professional Care" },
-  { value: 10, suffix: "+", label: "Years of teaching" },
+  { value: 25, prefix: "", suffix: "+", label: "Years of Experience" },
+  { value: 1000, prefix: "", suffix: "+", label: "Successful Operations" },
+  { value: 100, prefix: "", suffix: "%", label: "Professional Care" },
+  { value: 10, prefix: "+", suffix: "", label: "Teaching" },
 ];
 
 export const services = [
   {
-    title: "General Surgery",
+    title: "Onco Surgery & General Surgery",
     description:
-      "Comprehensive surgical care for a wide range of abdominal, digestive, and soft-tissue conditions, from diagnosis through recovery.",
+      "Comprehensive surgical care for a wide range of operations for tumors of the head and neck, the digestive system, the uterus, ovaries, and cervix, as well as soft-tissue conditions and breast cancer, from diagnosis through recovery, along with general surgery procedures including hernia, anal, appendix, gallbladder, and pilonidal sinus operations.",
   },
   {
     title: "Laparoscopic Surgery",
@@ -45,8 +45,8 @@ export const services = [
 ];
 
 export const whyChoose = [
-  { title: "15+ Years Experience", description: "Extensive experience across general and laparoscopic surgery." },
-  { title: "Consultant General Surgeon", description: "Board-level expertise in complex surgical cases." },
+  { title: "25+ Years Experience", description: "Extensive experience across onco, general, and laparoscopic surgery." },
+  { title: "Consultant Onco & General Surgeon", description: "Board-level expertise in complex surgical cases." },
   { title: "Assistant Professor", description: "Active academic role at Beni Suef University." },
   { title: "British Fellowship", description: "FRCS-accredited training and international standards of care." },
 ];
@@ -55,7 +55,7 @@ export const workingHours = [
   { day: "Saturday", hours: "4:00 PM – 6:00 PM", closed: false },
   { day: "Sunday", hours: "4:00 PM – 6:00 PM", closed: false },
   { day: "Monday", hours: "4:00 PM – 6:00 PM", closed: false },
-  { day: "Tuesday", hours: "4:00 PM – 6:00 PM", closed: false },
+  { day: "Tuesday", hours: "Closed", closed: true },
   { day: "Wednesday", hours: "4:00 PM – 6:00 PM", closed: false },
   { day: "Thursday", hours: "Closed", closed: true },
   { day: "Friday", hours: "Closed", closed: true },

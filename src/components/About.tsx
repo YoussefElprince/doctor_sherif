@@ -77,7 +77,7 @@ export default function About() {
                 className="rounded-2xl bg-gradient-to-br from-primary to-primary-deep text-white p-6 shadow-soft hover:shadow-lift transition-shadow"
               >
                 <p className="font-display text-3xl md:text-4xl">
-                  <AnimatedCounter value={s.value} suffix={s.suffix} />
+                  <AnimatedCounter value={s.value} prefix={s.prefix} suffix={s.suffix} />
                 </p>
                 <p className="mt-2 text-sm text-white/80 leading-snug">{s.label}</p>
               </motion.div>

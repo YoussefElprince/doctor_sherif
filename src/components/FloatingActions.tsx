@@ -8,7 +8,7 @@ export default function FloatingActions() {
   return (
     <div className="fixed bottom-6 right-5 z-40 flex flex-col gap-3 rtl:left-5 rtl:right-auto md:bottom-8 md:right-8 md:rtl:left-8 md:rtl:right-auto">
       <motion.a
-        href={`tel:${content.doctor.phoneNumbers[0]}`}
+        href={`tel:+20${content.doctor.phoneNumbers[0].slice(1)}`}
         aria-label={content.ui.callClinic}
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}

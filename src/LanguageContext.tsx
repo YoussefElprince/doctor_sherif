@@ -126,7 +126,7 @@ const translations = {
       contact: "تواصل معنا",
       about: "عن الطبيب",
       services: "الخدمات",
-      whyChoose: "لماذا تختارنا",
+      whyChoose: "لماذا تختار",
       clinic: "العيادة",
       getInTouch: "تواصل معنا",
       areasOfCare: "مجالات الرعاية الجراحية",

@@ -66,22 +66,20 @@ export default function Contact() {
             ))}
           </div>
 
-          <motion.a
-            href={`mailto:${content.doctor.email}`}
+          <motion.div
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeUp}
             transition={{ delay: 0.1 }}
             className="email-contact-card lg:col-span-3"
-            aria-label={content.ui.emailDoctor}
           >
             <span className="email-contact-card__decor" />
             <span className="email-contact-card__content">
               <HeartPulse size={34} strokeWidth={1.8} aria-hidden="true" />
               <span className="email-contact-card__title">{content.ui.healthPriority}</span>
             </span>
-          </motion.a>
+          </motion.div>
         </div>
       </div>
     </section>

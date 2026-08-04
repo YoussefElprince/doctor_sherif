@@ -11,10 +11,10 @@ const fadeUp = {
 export default function Contact() {
   const { content } = useLanguage();
   const contactCards = [
-    ...content.doctor.phoneNumbers.map((number) => ({ icon: Phone, label: content.ui.phone, value: number, href: `tel:+20${number.slice(1)}` })),
-    ...content.doctor.whatsappNumbers.map((number) => ({ icon: MessageCircle, label: content.ui.whatsapp, value: number, href: `https://wa.me/20${number.slice(1)}` })),
-    { icon: Mail, label: content.ui.email, value: content.doctor.email, href: `mailto:${content.doctor.email}` },
-    { icon: MapPin, label: content.ui.clinicAddress, value: content.clinic.address, href: content.clinic.mapsUrl },
+    ...content.doctor.phoneNumbers.map((number) => ({ icon: Phone, label: content.ui.phone, value: number, href: `tel:+20${number.slice(1)}`, action: content.ui.clickHere })),
+    ...content.doctor.whatsappNumbers.map((number) => ({ icon: MessageCircle, label: content.ui.whatsapp, value: number, href: `https://wa.me/20${number.slice(1)}`, action: content.ui.clickHere })),
+    { icon: Mail, label: content.ui.email, value: content.doctor.email, href: `mailto:${content.doctor.email}`, action: undefined },
+    { icon: MapPin, label: content.ui.clinicAddress, value: content.clinic.address, href: content.clinic.mapsUrl, action: undefined },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function Contact() {
         <div className="mt-14 grid lg:grid-cols-5 gap-8">
           {/* Contact cards */}
           <div className="grid gap-4 md:grid-cols-2 lg:col-span-2 lg:grid-cols-1">
-            {contactCards.map(({ icon: Icon, label, value, href }, i) => (
+            {contactCards.map(({ icon: Icon, label, value, href, action }, i) => (
               <motion.a
                 key={`${label}-${value}`}
                 href={href}
@@ -61,6 +61,7 @@ export default function Contact() {
                   <p className="mt-0.5 break-words text-[15px] font-medium text-primary-deep">
                     {value}
                   </p>
+                  {action && <span className="mt-1 inline-block text-xs font-semibold tracking-wide text-accent">{action}</span>}
                 </div>
               </motion.a>
             ))}

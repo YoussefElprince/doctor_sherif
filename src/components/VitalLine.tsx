@@ -28,7 +28,7 @@ export default function VitalLine({
       viewBox={`0 0 ${width} ${h}`}
       width={width}
       height={h}
-      className={className}
+      className={`vital-line ${className}`}
       fill="none"
       aria-hidden="true"
     >
@@ -40,8 +40,8 @@ export default function VitalLine({
         strokeLinejoin="round"
         initial={{ pathLength: 0, opacity: 0 }}
         whileInView={{ pathLength: 1, opacity: 1 }}
-        viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 1.1, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 3, ease: "easeInOut" }}
       />
     </svg>
   );

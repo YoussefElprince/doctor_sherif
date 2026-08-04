@@ -66,6 +66,7 @@ const translations = {
       professor: "Professor",
       portraitAlt: "Portrait of Dr. Sherif Elprince, Consultant General Surgeon",
       emailDoctor: "Email Dr. Sherif Elprince",
+      clickHere: "Click here",
     },
   },
   ar: {
@@ -87,7 +88,7 @@ const translations = {
       { value: 15, suffix: "+", label: "عاماً من الخبرة" },
       { value: 1000, suffix: "+", label: "عملية ناجحة" },
       { value: 100, suffix: "%", label: "رعاية احترافية" },
-      { value: 10, suffix: "+", label: "عاماً من التدريس" },
+      { value: 24, suffix: "/7", label: "دعم للمرضى" },
     ],
     services: [
       { title: "الجراحة العامة", description: "رعاية جراحية متكاملة لمجموعة واسعة من حالات البطن والجهاز الهضمي والأنسجة الرخوة، من التشخيص حتى التعافي." },
@@ -166,6 +167,7 @@ const translations = {
       professor: "مساعد",
       portraitAlt: "صورة د. شريف البرنس، استشاري الجراحة العامة",
       emailDoctor: "راسل د. شريف البرنس",
+      clickHere: "اضغط هنا",
     },
   },
 } as const;

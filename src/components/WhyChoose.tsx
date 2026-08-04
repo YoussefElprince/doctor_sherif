@@ -11,7 +11,7 @@ const fadeUp = {
 };
 
 export default function WhyChoose() {
-  const { content } = useLanguage();
+  const { content, isArabic } = useLanguage();
 
   return (
     <section className="relative py-24 md:py-32 bg-white">
@@ -27,7 +27,7 @@ export default function WhyChoose() {
             {content.ui.whyChoose}
           </span>
           <h2 className="mt-3 font-display text-balance text-4xl md:text-5xl text-primary-deep leading-tight">
-            {content.ui.whyChoose} {content.doctor.name}?
+            {content.ui.whyChoose} {content.doctor.name}{isArabic ? "؟" : "?"}
           </h2>
           <VitalLine className="mt-5 mx-auto" width={140} />
         </motion.div>
